@@ -9,7 +9,7 @@ function fatorial($num){
 
 $num=readline("Digite um número: ");
 
-while($num>0){
+while($num!=0){
     fatorial($num);
     $num=readline("Digite outro número: ");
 }
