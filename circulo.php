@@ -2,12 +2,12 @@
 
 function areaCirculo($raio){
     $area=3.14*$raio*$raio;
-    print("\nÁrea: " . $area . ".\n");
+    print("\nÁrea: " . $area . "cm.\n");
 }
 
 function circunferenciaCirculo($raio){
     $circunferencia=2*3.14*$raio;
-    print("\nCircunferência: " . $circunferencia . ".\n\n");
+    print("\nCircunferência: " . $circunferencia . "cm.\n\n");
 }
 
 for($i=1;$i<=3;$i++){
