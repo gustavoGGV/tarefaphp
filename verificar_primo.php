@@ -1,22 +1,17 @@
 <?php
 
-$num=readline("Digite um número: ");
-
-while($num>=2){
-    verificarPrimo($num);
-    $num=readline("Digite outro número: ");
+function verificarPrimo($num){
+    return($num%1==0 && $num%$num==0 && $num%2!=0 && $num%3!=0);
 }
 
-function verificarPrimo($num){
-    $primo=0;
-    for($i=1;$i<=$num;$i++){
-        if($num%$i==0){
-            $primo++;
-        }
-    }
-    if($primo==2){
+$num=2;
+
+while($num>=2){
+    $num=readline("Digite um número: ");
+    $primo=verificarPrimo($num);
+    if($primo){
         print("\nEste número é primo!\n\n");
-    } else{
-        print("\nEste número NÃO é primo!\n\n");
+    }else{
+        print("\nEste número não é primo!\n\n"); 
     }
 }
