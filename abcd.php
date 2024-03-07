@@ -5,6 +5,16 @@ $b=array();
 $c=array();
 $d=array();
 
+function existe($vetor, $num){
+    foreach($vetor as $v)
+        if($v==$num)
+            return true;
+
+    return false;
+}
+
+// NÃO SEI COMO UTILIZA A FUNÇÃO ACIMA KKKKKKKK
+
 /*function verificar($a, $b, $c){
     for($i=0;$i<5;$i++){
         foreach($b as $x){
