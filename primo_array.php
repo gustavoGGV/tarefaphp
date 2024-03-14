@@ -14,8 +14,7 @@ $num=1;
 
 while($num>0){
     $num=readline("Digite um número: ");
-    if($num!=0){
-        verificarPrimo($num);
+    if($num!=0 && $num!=1){
         if(verificarPrimo($num)==true){
             array_push($primo, $num);
         }
